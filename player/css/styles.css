@@ -1,0 +1,12 @@
+
+
+
+
+.background {
+position: fixed;
+top: 0;
+left: 0;
+width: 960px;
+height: 540px;
+background: url('../i/background.png');
+}
