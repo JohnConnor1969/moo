@@ -26,8 +26,10 @@ height: 78px;
 left: 0px;
 top: 0px;
 position: fixed;
-background-image: url("../i/top.png");
-background-repeat: inherit;
+/*background-image: url("../i/top.png");*/
+/*background-repeat: inherit;*/
+opacity: 0.3;
+background-color: black
 }
 
 .time {
