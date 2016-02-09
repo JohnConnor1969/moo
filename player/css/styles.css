@@ -29,3 +29,23 @@ position: fixed;
 background-image: url("../i/top.png");
 background-repeat: inherit;
 }
+
+.time {
+  position: fixed;
+  left: 850px;
+  top: 15px;
+  color: #ffffff;
+  font-size: 32px;
+  text-shadow: #000000 1px 0px, #000000 1px 1px, #000000 0px 1px, #000000 -1px 1px, #000000 -1px 0px, #000000 -1px -1px, #000000 0px -1px, #000000 1px -1px;
+  z-index: 4;
+}
+
+.logo {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  color: #ffffff;
+  font-size: 32px;
+  text-shadow: #000000 1px 0px, #000000 1px 1px, #000000 0px 1px, #000000 -1px 1px, #000000 -1px 0px, #000000 -1px -1px, #000000 0px -1px, #000000 1px -1px;
+  z-index: 4;
+}
