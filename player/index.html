@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     
     <script type="text/javascript" src="libs/flashlsAPI.js"></script>
-    <script type="text/javascript" src="libs/libs/ParsedQueryString.js"></script>
+    <script type="text/javascript" src="libs/ParsedQueryString.js"></script>
     <script type="text/javascript" src="libs/JSLoaderFragment.js"></script>
-    <script type="text/javascript" src="/libs/JSLoaderPlaylist.js"></script>
-    <script type="text/javascript" src="/libs/js2flash.js"></script>
-    <script type="text/javascript" src="/libs/playercode.js"></script>
+    <script type="text/javascript" src="libs/JSLoaderPlaylist.js"></script>
+    <script type="text/javascript" src="libs/js2flash.js"></script>
+    <script type="text/javascript" src="libs/playercode.js"></script>
     <!-- // <script type="text/javascript" src="/libs/canvas.js"></script> -->
     <!-- // <script type="text/javascript" src="/libs/metrics.js"></script> -->
-    <script type="text/javascript" src="/libs/jsonpack.js"></script>
+    <script type="text/javascript" src="libs/jsonpack.js"></script>
     <script type="text/javascript" src="libs/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
@@ -42,5 +42,54 @@
             <embed src="flashlsChromeless.swf?inline=1" width="960" height="540" name="moviename" quality="autohigh" bgcolor="#0" align="middle" allowFullScreen="false" allowScriptAccess="always" type="application/x-shockwave-flash" swliveconnect="true" wmode="window" flashVars="callback=flashlsCallback" pluginspage="http://www.macromedia.com/go/getflashplayer" >
             </embed>
         </object>
+    <div id='PlaybackControl'>
+      <h4> Playback Control </h4>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.play(-1)">play</button>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.pause()">pause</button>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.resume()">resume</button>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.seek(api.getPosition()+10)">currentTime+=10</button>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.seek(api.getPosition()-10)">currentTime-=10</button>
+      <button type="button" class="btn btn-sm btn-info" onclick="api.seek($('#seek_pos').val())">seek to </button>
+      <input type="text" id='seek_pos' size="8" onkeydown="if(window.event.keyCode=='13'){api.seek($('#seek_pos').val());}">
+      <button type="button" class="btn btn-sm btn-info" onclick="api.volume($('#vol_val').val())">set volume </button>
+      <input type="text" id='vol_val' size="8" onkeydown="if(window.event.keyCode=='13'){api.volume($('#vol_val').val());}">
+      <table>
+          <tr>
+              <td>selectable audio tracks</td>
+          </tr>
+          <tr>
+              <td> <div id="audioControl" style="display: inline;"></div> </td>
+          </tr>
+      </table>
+    </div>
+    <div id="controls">
+        <div id="customButtons"></div>
+        <select id="streamSelect" class="innerControls"><option value="" selected>(Enter custom URL below)</option></select>
+        <input id="streamURL" class="innerControlsLeft" type=text value=""/>
+        <button type="button" class="innerControlsRight" onclick="loadStream($('#streamURL').val());">load</button>
+        <br>
+        <div id="StreamPermalink" class="innerControls"></div>
+        <span id="currentResolution" style="float:left;font-size: 8pt;">-</span>
+    </div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#streamSelect').change(function()      { $('#streamURL').val($('#streamSelect').val());loadStream($('#streamURL').val());});
+    $('#streamURL').change(function()           { loadStream($('#streamURL').val());});
+    $("#PlaybackControl").hide();
+    $("#PlaybackInfo").hide();
+    $("#QualityLevelControl").hide();
+    $("#AdvancedControl").hide();
+    $("#MetricsDisplay").hide();
+    $("#StatsDisplay").hide();
+    $("#VideoStatus").hide();
+
+
+    var manifest = decodeURIComponent(location.search.split('src=')[1]);
+    if(manifest === 'undefined') {
+        manifest = 'http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8';
+    }
+    $('#streamURL').val(manifest);
+})
+</script>
 </body>
 </html>

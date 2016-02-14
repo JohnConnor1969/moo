@@ -1,24 +1,3 @@
-$(document).ready(function() {
-    $('#streamSelect').change(function()      { $('#streamURL').val($('#streamSelect').val());loadStream($('#streamURL').val());});
-    $('#streamURL').change(function()           { loadStream($('#streamURL').val());});
-    $("#PlaybackControl").hide();
-    $("#PlaybackInfo").hide();
-    $("#QualityLevelControl").hide();
-    $("#AdvancedControl").hide();
-    $("#MetricsDisplay").hide();
-    $("#StatsDisplay").hide();
-    $("#VideoStatus").hide();
-    $('#metricsButtonWindow').toggle(windowSliding);
-    $('#metricsButtonFixed').toggle(!windowSliding);
-
-    var manifest = decodeURIComponent(location.search.split('src=')[1]);
-    if(manifest === 'undefined') {
-        manifest = 'http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8';
-    }
-    $('#streamURL').val(manifest);
-})
-
-
 var events;
 var jsPingDate,flashPingDate, jsLoadDate, flashLoadDate;
 var lastSeekingIdx,lastFragPlayingIdx;
@@ -327,19 +306,4 @@ function level2label(index) {
         }
     }
 }
-function getFlashMovieObject2(movieName)
-{
-  if (window.document[movieName])
-  {
-      return window.document[movieName];
-  }
-  if (navigator.appName.indexOf("Microsoft Internet")==-1)
-  {
-    if (document.embeds && document.embeds[movieName])
-      return document.embeds[movieName];
-  }
-  else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
-  {
-    return document.getElementById(movieName);
-  }
-}
+
