@@ -2,10 +2,23 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=940"/>
+    <meta name="viewport" content="width=960"/>
     <title></title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     
+    <script type="text/javascript" src="libs/flashlsAPI.js"></script>
+    <script type="text/javascript" src="libs/libs/ParsedQueryString.js"></script>
+    <script type="text/javascript" src="libs/JSLoaderFragment.js"></script>
+    <script type="text/javascript" src="/libs/JSLoaderPlaylist.js"></script>
+    <script type="text/javascript" src="/libs/js2flash.js"></script>
+    <!-- // <script type="text/javascript" src="/libs/canvas.js"></script> -->
+    <!-- // <script type="text/javascript" src="/libs/metrics.js"></script> -->
+    <script type="text/javascript" src="/libs/jsonpack.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
+    <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+
 </head>
 <body>
     <div id="background" class="background"><!-- --></div>
@@ -13,6 +26,20 @@
       <div id="logo" class="logo">channel1</div>
       <div id="time_" class="time">00:00</div>
     </div>
+    <div class="center" id="video">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="" id="moviename" width="960" height="540">
+            <param name="movie"  value="flashlsChromeless.swf?inline=1" />
+            <param name="quality" value="autohigh" />
+            <param name="swliveconnect" value="true" />
+            <param name="allowScriptAccess" value="always" />
+            <param name="bgcolor" value="#0" />
+            <param name="allowFullScreen" value="false" />
+            <param name="wmode" value="window" />
+            <param name="FlashVars" value="callback=flashlsCallback" />
 
+            <embed src="flashlsChromeless.swf?inline=1" width="960" height="540" name="moviename" quality="autohigh" bgcolor="#0" align="middle" allowFullScreen="false" allowScriptAccess="always" type="application/x-shockwave-flash" swliveconnect="true" wmode="window" flashVars="callback=flashlsCallback" pluginspage="http://www.macromedia.com/go/getflashplayer" >
+            </embed>
+        </object>
 </body>
 </html>
