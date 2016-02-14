@@ -8,7 +8,7 @@
       send random number
       получение regist_is_done
       запись random number для дальнейшего использования
-      иначе получение !regist_is_done
+      иначе получение regist_fail
         заново register
 
 первая инициация или нажатие пробела
