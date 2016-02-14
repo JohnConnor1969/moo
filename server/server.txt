@@ -1,0 +1,17 @@
+запуск
+
+
+проверка есть ли у нас number
+  если нету
+    register
+      send random number
+      получение regist_is_done
+      запись random number для дальнейшего использования
+      иначе получение !regist_is_done
+        заново register
+
+первая инициация или нажатие пробела
+
+send number
+получение следующего канала
+
