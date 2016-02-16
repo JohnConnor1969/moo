@@ -1,5 +1,7 @@
 window.onload = function(){
 
+renderName();
+
 }
 
 window.onkeyup = function(event) {
@@ -10,7 +12,7 @@ window.onkeyup = function(event) {
 }
 
 
-
+var canname = "channel name";
 var showbar = 0;
 function switchbar() {
   if (showbar == 0) {
@@ -24,6 +26,13 @@ function switchbar() {
   }
   
 };
+
+function renderName() {
+
+  var myChannel = document.getElementById('logo');
+  myChannel.innerHTML = canname;
+}
+
 function renderTime() {
 
 
