@@ -6,14 +6,22 @@ renderName();
 
 window.onkeyup = function(event) {
   if (event.keyCode == 32) { switchbar();};
-  if (event.keyCode == 38) { switchbar();};
-  if (event.keyCode == 40) { switchbar();};
+  if (event.keyCode == 38) { channNext();};
+  if (event.keyCode == 40) { channPrev();};
   
 }
 
 var site = "78.139.215.205"
 var canname = "channel name";
 var showbar = 0;
+
+function channNext() {
+
+}
+
+function channPrev() {
+
+}
 
 function switchbar() {
   if (showbar == 0) {
