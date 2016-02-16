@@ -11,9 +11,10 @@ window.onkeyup = function(event) {
   
 }
 
-
+var site = "78.139.215.205"
 var canname = "channel name";
 var showbar = 0;
+
 function switchbar() {
   if (showbar == 0) {
     $("#header").toggle();
@@ -25,7 +26,7 @@ function switchbar() {
     showbar = 0
   }
   
-};
+}
 
 function renderName() {
 
