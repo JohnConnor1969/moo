@@ -12,7 +12,7 @@ window.onkeyup = function(event) {
 }
 
 var site = "78.139.215.205"
-var canname = "channel name";
+var canname = "server not respond";
 var showbar = 0;
 
 function channNext() {
