@@ -3,7 +3,10 @@ window.onload = function(){
 }
 
 window.onkeyup = function(event) {
-  switchbar();
+  if (event.keyCode == 32) { switchbar();};
+  if (event.keyCode == 38) { switchbar();};
+  if (event.keyCode == 40) { switchbar();};
+  
 }
 
 
@@ -11,12 +14,12 @@ window.onkeyup = function(event) {
 var showbar = 0;
 function switchbar() {
   if (showbar == 0) {
-    $("#PlaybackControl").toggle();
+    $("#header").toggle();
     showbar = 1;
   }
 
   else {
-    $("#PlaybackControl").hide();
+    $("#header").hide();
     showbar = 0
   }
   
