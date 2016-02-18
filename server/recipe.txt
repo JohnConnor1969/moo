@@ -1,3 +1,7 @@
+рецепт изготовления сервера
+
+
+
 rails new zoom -B
 ---------------------------
 в Gemfile 
@@ -20,8 +24,19 @@ rails new zoom -B
 
 bundle install
 
-rails g model channel name:text link:text 
-rails g model player number:integer current_canal:integer
+rails g model channel name:text link:text published:boolean
+rails g model player number:integer current_channel:integer
+rails g migration create_channels_players
+-------------------
+в этой миграции
+-------------------
+  def change
+    create_table :channels_players, id: false do |t|
+      t.integer :channel_id
+      t.integer :player_id
+    end
+  end
+----------------------------
 
 
 rake db:migrate
