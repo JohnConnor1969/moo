@@ -1,0 +1,30 @@
+rails new zoom -B
+---------------------------
+в Gemfile 
+---------------------------
+  gem 'rake', '10.4.2'
+  gem 'devise'
+  gem 'puma'
+  gem 'bootstrap-sass'
+  gem 'slim-rails'
+
+    group :development, :test do
+      # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+      gem 'byebug'
+      gem 'rspec-rails'
+      gem 'factory_girl'
+    end
+------------------------------
+
+
+
+bundle install
+
+rails g model channel name:text link:text 
+rails g model player number:integer
+rake db:migrate
+rails g controller channel
+rails g jbuilder channel
+rails g devise:install
+rails g devise manager
+rails g devise:views
