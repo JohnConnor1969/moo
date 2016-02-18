@@ -25,7 +25,7 @@ rails new zoom -B
 bundle install
 
 rails g model channel name:text link:text published:boolean
-rails g model player number:integer current_channel:integer
+rails g model player number:integer 
 rails g migration create_channels_players
 -------------------
 в этой миграции
