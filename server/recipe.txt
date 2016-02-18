@@ -21,10 +21,15 @@ rails new zoom -B
 bundle install
 
 rails g model channel name:text link:text 
-rails g model player number:integer
+rails g model player number:integer current_canal:integer
+
+
 rake db:migrate
 rails g controller channel
+rails g controller player
+
 rails g jbuilder channel
+
 rails g devise:install
 rails g devise manager
 rails g devise:views
