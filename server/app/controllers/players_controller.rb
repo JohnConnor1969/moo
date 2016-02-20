@@ -7,6 +7,7 @@ class PlayersController < ApplicationController
 
   def new
     @player = Player.new
+
   end
   
   def reg
@@ -28,7 +29,7 @@ class PlayersController < ApplicationController
   def create
     @player = Player.create((params[:player]).permit(:number))
     if @player.errors.empty?
-      redirect_to player_path(@player)
+      redirect_to players_path
     else
       render "new"
     end
