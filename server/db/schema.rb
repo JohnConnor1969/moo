@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20160220091635) do
   add_index "channels", ["name"], name: "index_channels_on_name"
   add_index "channels", ["published"], name: "index_channels_on_published"
 
-  create_table "channels_players", force: :cascade do |t|
+  create_table "channels_players", id: false, force: :cascade do |t|
     t.integer "channel_id"
     t.integer "player_id"
   end
