@@ -1,0 +1,7 @@
+<h1>Create new channel</h1>
+
+<%= form_for @channel do |f| %>
+  <%= render partial: "form", locals: { f: f} %>
+
+  <p><%= f.submit "добавить" %></p>
+<% end %>

@@ -1,0 +1,9 @@
+<h1><%= @channel.name %></h1>
+
+<ul>
+  <li>название: <%= @channel.name %></li>
+  <li>ссылка: <%= @channel.link %></li>
+  <li>в вещании: <%= @channel.published %></li>
+
+</ul>
+<%= link_to "к списку", channels_path %>

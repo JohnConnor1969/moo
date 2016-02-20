@@ -40,10 +40,10 @@ rails g migration create_channels_players
 
 
 rake db:migrate
-rails g controller channel
-rails g controller player
+rails g controller channels
+rails g controller players
 
-rails g jbuilder channel
+rails g jbuilder players
 
 rails g devise:install
 rails g devise manager
