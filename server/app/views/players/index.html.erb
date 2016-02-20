@@ -13,8 +13,8 @@
   <% @players.each do |i| %>
     <tr>
       <td><%= i.id %></td>
-      <td><%= link_to i.number %></td>
-      <td><%= i.number %></td>
+      <td><%= link_to i.number, player_path(i) %></td>
+      <td><%= i.channels.first %></td>
       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
     </tr>
   <% end %>

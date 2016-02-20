@@ -27,7 +27,7 @@ class ChannelsController < ApplicationController
   #/channels POST
   def create
     # channel_params = (params[:channel])
-    @channel = Channel.create((params[:channel]).permit(:name, :link, :published))
+    @channel = Channel.create((params[:channel]).permit(:name, :link, :published, :players))
     # @channel = Channel.create(params[:channel])
     if @channel.errors.empty?
       redirect_to channel_path(@channel)
@@ -39,7 +39,7 @@ class ChannelsController < ApplicationController
   #/channels/1 PUT
   def update
     # @channel = Channel.find(params[:id])
-    @channel.update_attributes((params[:channel]).permit(:name, :link, :published))
+    @channel.update_attributes((params[:channel]).permit(:name, :link, :published, :players))
     if @channel.errors.empty?
       redirect_to channel_path(@channel)
     else
