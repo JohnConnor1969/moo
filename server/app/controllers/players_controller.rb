@@ -12,12 +12,13 @@ class PlayersController < ApplicationController
   end
   
   def reg
+    Player.create(number: params[:number]).permit(:number)
     # redirect_to action: 'create' [:number => '8888']
-    render text: "wooooowooowowo парень, палехче"
+    # render text: "wooooowooowowo парень, палехче"
   end
 
   def play
-    
+    render text: "clannel 1 http://asdfkllllcllldf"
   end
 
   def next
@@ -33,7 +34,7 @@ class PlayersController < ApplicationController
     if @player.errors.empty?
       redirect_to players_path
     else
-      render text: "nope"
+      render "new"
     end
     # render text: params.inspect
   end
