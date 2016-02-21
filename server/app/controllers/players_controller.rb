@@ -18,13 +18,18 @@ class PlayersController < ApplicationController
   end
   def fix
     @player.channels.clear
-    @player.channels << [Channel.where(:published =>  true).first]
+    unless Channel.where(:published =>  true).empty?
+      @player.channels << [Channel.where(:published =>  true).first]
+    end
+
     redirect_to player_path(@player)
   end
 
   def play
-    @player.channels.push Channel.where(:published =>  true).first
-    render text: "clannel 1 http://asdfkllllcllldf"
+    @chan = @player.channels.first.link
+    render json: @chan
+    # @player.channels.push Channel.where(:published =>  true).first
+    # render text: "clannel 1 http://asdfkllllcllldf"
   end
 
   def next
@@ -58,7 +63,7 @@ class PlayersController < ApplicationController
     redirect_to action: "index"
   end
   def show
-    # render :json => @player
+    render :json => @playerю
     unless @player #= player.where(id: params[:id]).first
       render text: "Page not found", status: 404
     end
