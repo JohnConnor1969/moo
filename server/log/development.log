@@ -13005,3 +13005,550 @@ Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde4
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-21 03:23:42 +0600
+
+
+Started GET "/players" for ::1 at 2016-02-21 12:58:04 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as HTML
+  Rendered players/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/projects/Apps/zoom/server/app/views/players/index.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...st.name i.channels.first.name );@output_buffer.safe_append='...
+...                               ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/players/index.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/players/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/players/index.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+  app/views/players/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/players/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (227.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (213.2ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (443.8ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 12:58:27 +0600
+Processing by PlayersController#index as HTML
+  Rendered players/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/projects/Apps/zoom/server/app/views/players/index.html.erb:17: syntax error, unexpected keyword_end, expecting keyword_then or ';' or '\n'
+....name i.channels.first.name end );@output_buffer.safe_append...
+...                               ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+C:/projects/Apps/zoom/server/app/views/players/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/players/index.html.erb:17: syntax error, unexpected keyword_end, expecting keyword_then or ';' or '\n'
+  app/views/players/index.html.erb:20: syntax error, unexpected keyword_end, expecting ')'
+  app/views/players/index.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+  app/views/players/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/players/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (148.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (343.6ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 12:59:03 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  Rendered players/index.html.erb within layouts/application (567.2ms)
+Completed 500 Internal Server Error in 584ms (ActiveRecord: 6.0ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= if i.channels.first.name 
+    18:         i.channels.first.name 
+    19:         end %></td>
+    20:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_55089048'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_55089048'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (143.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (147.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (293.1ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:00:32 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  Rendered players/index.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (undefined method `valid' for "jhgfd":String):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= if i.channels.first.name.valid
+    18:         i.channels.first.name
+    19:       end %></td>
+    20:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_54407856'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_54407856'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (176.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (130.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (271.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:00:53 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  Rendered players/index.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `exist' for "jhgfd":String):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= if i.channels.first.name.exist
+    18:         i.channels.first.name
+    19:       end %></td>
+    20:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_40455576'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_40455576'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (225.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (647.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1125.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:02:00 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (2.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  Rendered players/index.html.erb within layouts/application (130.5ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 4.0ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= if i.channels.first.name != nil
+    18:         i.channels.first.name
+    19:       end %></td>
+    20:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_52786068'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_52786068'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (130.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (252.6ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:03:07 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  Rendered players/index.html.erb within layouts/application (246.0ms)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `NilClass' for #<Channel:0x7457b38>):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= unless i.channels.first.NilClass
+    18:         i.channels.first.name
+    19:       end %></td>
+    20:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_61059084'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_61059084'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (153.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (156.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (355.6ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE (6)  ORDER BY "players"."id" ASC LIMIT 1[0m
+  [1m[35mChannel Load (0.0ms)[0m  SELECT "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  [["player_id", 1]]
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:19:44 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?[0m  [["player_id", 1]]
+  Rendered players/index.html.erb within layouts/application (80.0ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `nitems' for #<Channel::ActiveRecord_Associations_CollectionProxy:0x4ef4158>):
+    14:     <tr>
+    15:       <td><%= i.id %></td>
+    16:       <td><%= link_to i.number, player_path(i) %></td>
+    17:       <td><%= i.channels.nitems %></td>
+    18:       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+    19:     </tr>
+    20:   <% end %>
+  app/views/players/index.html.erb:17:in `block in _app_views_players_index_html_erb___885010507_40595268'
+  app/views/players/index.html.erb:13:in `_app_views_players_index_html_erb___885010507_40595268'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (155.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (384.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (738.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:24:14 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1
+  Rendered players/index.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 2021ms (Views: 2013.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-21 13:24:16 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-21 13:24:17 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:24:17 +0600
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:25:17 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (4.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (2.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (2.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1[0m
+  Rendered players/index.html.erb within layouts/application (637.0ms)
+Completed 200 OK in 855ms (Views: 835.5ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-21 13:25:18 +0600
+
+
+Started GET "/channels/3" for ::1 at 2016-02-21 13:26:16 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered channels/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 134ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:29:39 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (2.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1[0m
+  Rendered players/index.html.erb within layouts/application (344.5ms)
+Completed 200 OK in 500ms (Views: 487.5ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-21 13:29:40 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-21 13:29:41 +0600
+
+
+Started GET "/channels/1" for ::1 at 2016-02-21 13:29:42 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered channels/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 129ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-21 13:29:45 +0600
+Processing by ChannelsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels"[0m
+  [1m[35mChannel Load (0.5ms)[0m  SELECT "channels".* FROM "channels"
+  Rendered channels/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:29:47 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1[0m
+  Rendered players/index.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 199ms (Views: 192.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/channels/1" for ::1 at 2016-02-21 13:29:49 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered channels/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-21 13:29:51 +0600
+Processing by ChannelsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "channels"[0m
+  [1m[35mChannel Load (0.0ms)[0m  SELECT "channels".* FROM "channels"
+  Rendered channels/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 141ms (Views: 140.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels/1" for ::1 at 2016-02-21 13:30:02 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChannel Load (2.5ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered channels/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 301ms (Views: 263.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-21 13:30:03 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-21 13:30:04 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1
+  Rendered players/index.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 166ms (Views: 161.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/players/1" for ::1 at 2016-02-21 13:30:13 +0600
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."id" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players/1" for ::1 at 2016-02-21 13:30:13 +0600
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT  "players".* FROM "players" WHERE "players"."id" = ?  ORDER BY "players"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 0.0ms)
