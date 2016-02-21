@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   # before_filter :check_play, only [:play, :next, :prev]
-  before_filter :find_player,      only: [:show, :edit, :update, :destroy, :play, :fix, :next, :prev]
+  before_filter :find_player,      only: [:show, :edit, :update, :destroy, :fix]
   def index
     @players = Player.all
     # render text: "lalsldkkk sldkflla"
@@ -11,11 +11,7 @@ class PlayersController < ApplicationController
 
   end
   
-  def reg
-    Player.create(number: params[:number]).permit(:number)
-    # redirect_to action: 'create' [:number => '8888']
-    # render text: "wooooowooowowo парень, палехче"
-  end
+
   def fix
     @player.channels.clear
     unless Channel.where(:published =>  true).empty?
@@ -25,20 +21,6 @@ class PlayersController < ApplicationController
     redirect_to player_path(@player)
   end
 
-  def play
-    @chan = @player.channels.first.link
-    render json: @chan
-    # @player.channels.push Channel.where(:published =>  true).first
-    # render text: "clannel 1 http://asdfkllllcllldf"
-  end
-
-  def next
-    
-  end
-
-  def prev
-    
-  end
   def update
     @player.update_attributes((params[:player]).permit(:number, :channels))
     if @player.errors.empty?
@@ -63,8 +45,8 @@ class PlayersController < ApplicationController
     redirect_to action: "index"
   end
   def show
-    render :json => @playerю
-    unless @player #= player.where(id: params[:id]).first
+    # render :json => @player
+    unless @player
       render text: "Page not found", status: 404
     end
   end

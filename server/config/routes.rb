@@ -4,14 +4,17 @@ Rails.application.routes.draw do
   # get ':controller(/:action(/:id))(.:format)'
   # You can have the root of your site routed with "root"
   root 'channels#index'
-  get 'api/play' => 'api@play'
+  get 'api/_play' => 'api@_play'
+  get 'api/_next' => 'api@_next'
+  get 'api/_prev' => 'api@_prev'
+  get 'api/_answer' => 'api@_answer'
   resources :channels do
     get :uppublish,    on: :member
     get :published, on: :collection
   end
 
   resources :players do
-    get :play, on: :member 
+    # get :play, on: :member 
     get :fix, on: :member
     # get :reg, on: :member
   end
