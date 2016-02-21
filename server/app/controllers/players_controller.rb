@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   # before_filter :check_play, only [:play, :next, :prev]
-  before_filter :find_player,      only: [:show, :edit, :update, :destroy, :play]
+  before_filter :find_player,      only: [:show, :edit, :update, :destroy, :play, :fix, :next, :prev]
   def index
     @players = Player.all
     # render text: "lalsldkkk sldkflla"
@@ -15,6 +15,11 @@ class PlayersController < ApplicationController
     Player.create(number: params[:number]).permit(:number)
     # redirect_to action: 'create' [:number => '8888']
     # render text: "wooooowooowowo парень, палехче"
+  end
+  def fix
+    @player.channels.clear
+    @player.channels << [Channel.where(:published =>  true).first]
+    redirect_to player_path(@player)
   end
 
   def play

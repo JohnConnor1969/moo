@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :players do
     get :play, on: :member 
+    get :fix, on: :member
     # get :reg, on: :member
   end
 
