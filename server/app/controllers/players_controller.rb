@@ -53,7 +53,7 @@ class PlayersController < ApplicationController
     redirect_to action: "index"
   end
   def show
-    render :json => @player
+    # render :json => @player
     unless @player #= player.where(id: params[:id]).first
       render text: "Page not found", status: 404
     end

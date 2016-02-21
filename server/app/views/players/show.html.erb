@@ -1,0 +1,32 @@
+<h1><%= @player.number %></h1>
+
+<ul>
+  <li>number: <%= @player.number %></li>
+
+</ul>
+<% if @player.channels.empty? %>
+  <b>No channels presents</b>
+<% else %>
+  <table>
+    <tr>
+      <th>channel id</th>
+      <th>Name</th>
+      <th>Link</th>
+      <th>Manage</th>
+      <th>Manage</th>
+      <th>Published</th>
+    </tr>
+  
+  <% @player.channels.each do |i| %>
+    <tr>
+      <td><%= i.id %></td>
+      <td><%= link_to i.name, channel_path(i) %></td>
+      <td><%= i.link %></td>
+      <td><%= link_to "редактировать", edit_channel_path(i) %></td>
+      <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
+      <td><%= i.published %>, <%= link_to "изменить", uppublish_channel_path(i) %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
+<%= link_to "к списку", players_path %>
