@@ -1,7 +1,7 @@
 window.onload = function(){
 
 renderName();
-
+call_zoom_api("_reg")
 }
 
 window.onkeyup = function(event) {
@@ -70,6 +70,19 @@ var src = 'http://' + site + '/api/' + func_name + '?' + 'number='+ number + '&'
 var xhr = new XMLHttpRequest();
 xhr.open('GET', src, true);
 xhr.send();
+
+xhr.onreadystatechange = function() { // (3)
+    if (xhr.readyState != 4) return;
+
+    // button.innerHTML = 'Готово!';
+
+    if (xhr.status != 200) {
+      alert(xhr.status + ': ' + xhr.statusText);
+    } else {
+      alert(xhr.responseText);
+    }
+
+  }
 
 }
 // call_zoom_api("_reg");

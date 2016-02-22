@@ -23989,3 +23989,66 @@ Processing by ApiController#_next as JSON
   [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 4)[0m  [["published", "t"]]
   [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
 Completed 200 OK in 40ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/_reg?number=2356666" for ::1 at 2016-02-22 21:04:13 +0600
+Processing by ApiController#_reg as JSON
+  Parameters: {"number"=>"2356666"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  SELECT  1 AS one FROM "players" WHERE "players"."number" = 2356666 LIMIT 1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["number", 2356666], ["created_at", "2016-02-22 15:04:14.911792"], ["updated_at", "2016-02-22 15:04:14.911792"]]
+  [1m[35m (197.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?[0m  [["published", "t"]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."published" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["published", "t"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "channels_players" ("player_id", "channel_id") VALUES (?, ?)  [["player_id", 11], ["channel_id", 2]]
+  [1m[36m (223.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1019ms (Views: 21.0ms | ActiveRecord: 428.1ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 21:06:46 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 419ms (Views: 414.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 21:06:49 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (24.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 11]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 11]]
+  Rendered players/index.html.erb within layouts/application (269.6ms)
+Completed 200 OK in 523ms (Views: 492.6ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 21:06:51 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 111ms (Views: 108.5ms | ActiveRecord: 1.0ms)
