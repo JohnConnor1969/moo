@@ -1,7 +1,9 @@
 window.onload = function(){
 
-renderName();
-call_zoom_api("_reg")
+  // renderName();
+  call_zoom_api("_reg");
+  call_zoom_api("_play");
+  setTimeout('channPlay()', 4000);
 }
 
 window.onkeyup = function(event) {
@@ -21,14 +23,31 @@ window.onkeyup = function(event) {
 var site = "78.139.215.205"
 var canname = "server not respond";
 var showbar = 0;
-var number = "263743"
-var respondServers
+var number = "263743";
+var respondServers;
+var link;
+
+function channPlay(){
+  canname = respondServers.name;
+  link = respondServers.link;
+  renderName();
+  loadStream(link);
+}
+
 function channNext() {
   call_zoom_api("_next");
+  canname = respondServers.name;
+  link = respondServers.link;
+  renderName();
+  loadStream(link);
 }
 
 function channPrev() {
   call_zoom_api("_prev");
+  canname = respondServers.name;
+  link = respondServers.link;
+  renderName();
+  loadStream(link);
 }
 
 function switchbar() {
@@ -53,41 +72,40 @@ function renderName() {
 function renderTime() {
 
 
-var timenow = new Date();
-var h = timenow.getHours();
-var m = timenow.getMinutes();
+  var timenow = new Date();
+  var h = timenow.getHours();
+  var m = timenow.getMinutes();
 
-var myTime = document.getElementById('time');
-if (m < 10) {
-m = "0" + m
-};
-myTime.innerHTML = h + ":" + m 
-setTimeout('renderTime()', 15000);
+  var myTime = document.getElementById('time');
+  if (m < 10) {
+  m = "0" + m
+  };
+  myTime.innerHTML = h + ":" + m 
+  setTimeout('renderTime()', 15000);
 }
 renderTime();
 
 
 
-function call_zoom_api(func_name)
-{
-var src = 'http://' + site + '/api/' + func_name + '?' + 'number='+ number + '&' + Math.random();
-var xhr = new XMLHttpRequest();
-xhr.open('GET', src, true);
-xhr.send();
+function call_zoom_api(func_name){
+  var src = 'http://' + site + '/api/' + func_name + '?' + 'number='+ number + '&' + Math.random();
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', src, false);
+  xhr.send();
 
-xhr.onreadystatechange = function() { // (3)
-    if (xhr.readyState != 4) return;
+  // xhr.onreadystatechange = function() { // (3)
+    // if (xhr.readyState != 4) return;
 
     // button.innerHTML = 'Готово!';
 
-    if (xhr.status != 200) {
-      alert(xhr.status + ': ' + xhr.statusText);
-    } else {
-      respondServers = xhr.responseText;
-      alert(xhr.responseText);
-    }
+    // if (xhr.status != 200) {
+      // alert(xhr.status + ': ' + xhr.statusText);
+    // } else {
+      respondServers = JSON.parse(xhr.responseText);
+      // alert(xhr.responseText);
+    // }
 
-  }
+  // }
 
 }
 // call_zoom_api("_reg");
