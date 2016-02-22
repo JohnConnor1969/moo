@@ -22893,3 +22893,1099 @@ Processing by ChannelsController#index as HTML
   [1m[35mChannel Load (0.0ms)[0m  SELECT "channels".* FROM "channels"
   Rendered channels/index.html.erb within layouts/application (8.5ms)
 Completed 200 OK in 98ms (Views: 94.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/_reg?number=2355" for ::1 at 2016-02-22 12:25:59 +0600
+Processing by ApiController#_reg as JSON
+  Parameters: {"number"=>"2355"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mPlayer Exists (0.0ms)[0m  SELECT  1 AS one FROM "players" WHERE "players"."number" = 2355 LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["number", 2355], ["created_at", "2016-02-22 06:25:59.610582"], ["updated_at", "2016-02-22 06:25:59.610582"]]
+  [1m[35m (109.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 114.5ms)
+
+NoMethodError (undefined method `permit' for #<Player:0x690d968>):
+  app/controllers/api_controller.rb:5:in `_reg'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (127.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (302.5ms)
+
+
+Started GET "/api/_reg?number=2355" for ::1 at 2016-02-22 12:26:58 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2355"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mPlayer Exists (1.0ms)[0m  SELECT  1 AS one FROM "players" WHERE "players"."number" = 2355 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 3.0ms)
+
+NoMethodError (undefined method `permit' for #<Player id: nil, number: 2355, created_at: nil, updated_at: nil>):
+  app/controllers/api_controller.rb:5:in `_reg'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (143.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (132.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (400.1ms)
+
+
+Started GET "/api/_reg?number=2355" for ::1 at 2016-02-22 12:27:25 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2355"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mPlayer Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "players" WHERE "players"."number" = 2355 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 3.0ms)
+
+NoMethodError (undefined method `channels' for nil:NilClass):
+  app/controllers/api_controller.rb:6:in `_reg'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (140.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (168.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (336.0ms)
+
+
+Started GET "/api/_reg?number=2355" for ::1 at 2016-02-22 12:28:30 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2355"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mPlayer Exists (0.5ms)[0m  SELECT  1 AS one FROM "players" WHERE "players"."number" = 2355 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 4.0ms)
+
+NoMethodError (undefined method `permit' for #<Player id: nil, number: 2355, created_at: nil, updated_at: nil>):
+  app/controllers/api_controller.rb:5:in `_reg'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (127.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (389.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (164.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (460.0ms)
+
+
+Started GET "/api/_reg?number=2355" for ::1 at 2016-02-22 12:28:46 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2355"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mPlayer Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "players" WHERE "players"."number" = 2355 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?[0m  [["published", "t"]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."published" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["published", "t"]]
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 6.0ms)
+
+ActionView::MissingTemplate (Missing template api/_reg, application/_reg with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :slim, :coffee, :jbuilder]}. Searched in:
+  * "C:/projects/Apps/zoom/server/app/views"
+  * "C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/devise-3.5.6/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  C:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (28.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (219.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (240.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (427.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:28:55 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 9]]
+  Rendered players/index.html.erb within layouts/application (210.5ms)
+Completed 200 OK in 297ms (Views: 288.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/_reg?number=2356" for ::1 at 2016-02-22 12:30:37 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2356"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mPlayer Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "players" WHERE "players"."number" = 2356 LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "players" ("number", "created_at", "updated_at") VALUES (?, ?, ?)  [["number", 2356], ["created_at", "2016-02-22 06:30:37.809211"], ["updated_at", "2016-02-22 06:30:37.809211"]]
+  [1m[36m (114.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?  [["published", "t"]]
+  [1m[36mChannel Load (4.5ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."published" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["published", "t"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "channels_players" ("player_id", "channel_id") VALUES (?, ?)[0m  [["player_id", 10], ["channel_id", 2]]
+  [1m[35m (96.0ms)[0m  commit transaction
+Completed 200 OK in 478ms (Views: 1.5ms | ActiveRecord: 237.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:30:47 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 9]]
+  [1m[35mChannel Exists (2.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (345.5ms)
+Completed 200 OK in 464ms (Views: 452.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 12:30:48 +0600
+
+
+Started DELETE "/players/9" for ::1 at 2016-02-22 12:30:54 +0600
+Processing by PlayersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uJc7xNkGIbLPAZkheo6pWx9L2Ufx3nDbaBJ7q102O5qtlwGEM2DJdgJzbibJ5/fBNDXRp3MWctbmVL02D9PZFg==", "id"=>"9"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."id" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "channels_players" WHERE "channels_players"."player_id" = ?[0m  [["player_id", 9]]
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "players" WHERE "players"."id" = ?  [["id", 9]]
+  [1m[36m (116.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/players
+Completed 302 Found in 163ms (ActiveRecord: 120.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:30:54 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (18.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (3.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (444.5ms)
+Completed 200 OK in 599ms (Views: 570.5ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/channels/2" for ::1 at 2016-02-22 12:31:00 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered channels/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 155ms (Views: 81.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:31:02 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:31:04 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (217.0ms)
+Completed 200 OK in 306ms (Views: 297.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/_reg?number=2356" for ::1 at 2016-02-22 12:31:21 +0600
+Processing by ApiController#_reg as HTML
+  Parameters: {"number"=>"2356"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mPlayer Exists (0.5ms)[0m  SELECT  1 AS one FROM "players" WHERE "players"."number" = 2356 LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?  [["published", "t"]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."published" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["published", "t"]]
+Completed 200 OK in 35ms (Views: 1.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:31:30 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (333.1ms)
+Completed 200 OK in 444ms (Views: 433.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 12:31:30 +0600
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 12:31:31 +0600
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:39:21 +0600
+Processing by ChannelsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "channels"[0m
+  [1m[35mChannel Load (1.0ms)[0m  SELECT "channels".* FROM "channels"
+  Rendered channels/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 122ms (Views: 102.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:39:22 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (1.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (381.0ms)
+Completed 200 OK in 475ms (Views: 447.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:39:24 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 79ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels/published" for ::1 at 2016-02-22 12:39:25 +0600
+Processing by ChannelsController#published as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?  [["published", "t"]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels" WHERE "channels"."published" = ?[0m  [["published", "t"]]
+  Rendered channels/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 218ms (Views: 215.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/channels/3/uppublish" for ::1 at 2016-02-22 12:39:28 +0600
+Processing by ChannelsController#uppublish as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "channels" SET "published" = ?, "updated_at" = ? WHERE "channels"."id" = ?  [["published", "f"], ["updated_at", "2016-02-22 06:39:28.323325"], ["id", 3]]
+  [1m[36m (241.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 263ms (ActiveRecord: 242.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-22 12:39:28 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (2.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 145ms (Views: 141.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/channels/published" for ::1 at 2016-02-22 12:39:32 +0600
+Processing by ChannelsController#published as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ?  [["published", "t"]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels" WHERE "channels"."published" = ?[0m  [["published", "t"]]
+  Rendered channels/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 99ms (Views: 96.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:39:36 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels/3/uppublish" for ::1 at 2016-02-22 12:39:37 +0600
+Processing by ChannelsController#uppublish as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  UPDATE "channels" SET "published" = ?, "updated_at" = ? WHERE "channels"."id" = ?  [["published", "t"], ["updated_at", "2016-02-22 06:39:37.919362"], ["id", 3]]
+  [1m[36m (103.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 133ms (ActiveRecord: 107.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-22 12:39:38 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 118ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/channels/4/edit" for ::1 at 2016-02-22 12:39:54 +0600
+Processing by ChannelsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered channels/_form.html.erb (216.5ms)
+  Rendered channels/edit.html.erb within layouts/application (225.5ms)
+Completed 200 OK in 298ms (Views: 292.6ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/channels/4" for ::1 at 2016-02-22 12:40:03 +0600
+Processing by ChannelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZyN1COMIFgHbfpqVMh9O9EJzfpRGCwtRHGbFg7a+aZVyI09ICW7+xRYMbZKBdhBuaQ12dMTDCVySIAMe5FuLGQ==", "channel"=>{"name"=>"красный дом", "link"=>"http://live.art.cdnvideo.ru/art-pull//ed6b7e08ea/playlist.m3u8", "published"=>"1"}, "commit"=>"Сохранить изменения", "id"=>"4"}
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/channels/4
+Completed 302 Found in 15ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/channels/4" for ::1 at 2016-02-22 12:40:03 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered channels/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:40:05 +0600
+Processing by ChannelsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels"[0m
+  [1m[35mChannel Load (1.0ms)[0m  SELECT "channels".* FROM "channels"
+  Rendered channels/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:40:23 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (179.0ms)
+Completed 200 OK in 323ms (Views: 313.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:40:24 +0600
+Processing by ChannelsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels"
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels"[0m
+  Rendered channels/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels/3" for ::1 at 2016-02-22 12:40:28 +0600
+Processing by ChannelsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered channels/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/channels" for ::1 at 2016-02-22 12:40:31 +0600
+Processing by ChannelsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels"[0m
+  [1m[35mChannel Load (0.0ms)[0m  SELECT "channels".* FROM "channels"
+  Rendered channels/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 12:49:37 +0600
+Processing by PlayersController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players"
+  [1m[36mChannel Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mCACHE (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mChannel Exists (0.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (261.0ms)
+Completed 200 OK in 370ms (Views: 359.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/api/_next?number=2355" for ::1 at 2016-02-22 12:57:51 +0600
+Processing by ApiController#_next as JSON
+  Parameters: {"number"=>"2355"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1  [["number", 2355]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.0ms)
+
+NoMethodError (undefined method `channels' for nil:NilClass):
+  app/controllers/api_controller.rb:20:in `_next'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (139.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (360.1ms)
+
+
+Started GET "/api/_next?number=2356" for ::1 at 2016-02-22 12:57:58 +0600
+Processing by ApiController#_next as JSON
+  Parameters: {"number"=>"2356"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["number", 2356]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 2)[0m  [["published", "t"]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  [["player_id", 10]]
+  [1m[36mSQL (109.0ms)[0m  [1mDELETE FROM "channels_players" WHERE "channels_players"."player_id" = ? AND "channels_players"."channel_id" = 2[0m  [["player_id", 10]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."published" = ? AND (id > 2)  ORDER BY "channels"."id" ASC LIMIT 1  [["published", "t"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "channels_players" ("player_id", "channel_id") VALUES (?, ?)  [["player_id", 10], ["channel_id", 3]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 463ms (Views: 2.0ms | ActiveRecord: 254.0ms)
+
+
+Started POST "/api/_reg" for ::1 at 2016-02-22 13:03:45 +0600
+Error occurred while parsing request parameters.
+Contents:
+
+number=2358
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'number=2358'):
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (191.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (154.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (354.0ms)
+
+
+Started POST "/api/_reg" for ::1 at 2016-02-22 13:04:06 +0600
+Error occurred while parsing request parameters.
+Contents:
+
+"number"=2358
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '=2358'):
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (149.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (299.1ms)
+
+
+Started GET "/api/_next?number=2356" for ::1 at 2016-02-22 13:04:49 +0600
+Processing by ApiController#_next as JSON
+  Parameters: {"number"=>"2356"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1  [["number", 2356]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 3)  [["published", "t"]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?[0m  [["player_id", 10]]
+  [1m[35mSQL (128.0ms)[0m  DELETE FROM "channels_players" WHERE "channels_players"."player_id" = ? AND "channels_players"."channel_id" = 3  [["player_id", 10]]
+  [1m[36mChannel Load (1.0ms)[0m  [1mSELECT  "channels".* FROM "channels" WHERE "channels"."published" = ? AND (id > 3)  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["published", "t"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "channels_players" ("player_id", "channel_id") VALUES (?, ?)[0m  [["player_id", 10], ["channel_id", 4]]
+  [1m[35m (88.5ms)[0m  commit transaction
+Completed 200 OK in 371ms (Views: 2.0ms | ActiveRecord: 226.0ms)
+
+
+Started POST "/api/_reg" for ::1 at 2016-02-22 13:05:52 +0600
+Processing by ApiController#_reg as JSON
+  Parameters: {"number"=>2360, "api"=>{"number"=>2360}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.4) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.4) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  devise (3.5.6) lib/devise/controllers/helpers.rb:257:in `handle_unverified_request'
+  actionpack (4.2.4) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.16.0) lib/puma/server.rb:557:in `handle_request'
+  puma (2.16.0) lib/puma/server.rb:404:in `process_client'
+  puma (2.16.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.16.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Bitnami/rubystack-2.0.0-33/ruby/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (237.0ms)
+
+
+Started GET "/api/_next?number=2354" for ::1 at 2016-02-22 13:06:37 +0600
+Processing by ApiController#_next as HTML
+  Parameters: {"number"=>"2354"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["number", 2354]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 3)[0m  [["published", "t"]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  [["player_id", 1]]
+  [1m[36mSQL (131.0ms)[0m  [1mDELETE FROM "channels_players" WHERE "channels_players"."player_id" = ? AND "channels_players"."channel_id" = 3[0m  [["player_id", 1]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" WHERE "channels"."published" = ? AND (id > 3)  ORDER BY "channels"."id" ASC LIMIT 1  [["published", "t"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "channels_players" ("player_id", "channel_id") VALUES (?, ?)  [["player_id", 1], ["channel_id", 4]]
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 318ms (Views: 2.0ms | ActiveRecord: 235.1ms)
+
+
+Started GET "/players" for ::1 at 2016-02-22 13:06:55 +0600
+Processing by PlayersController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players"
+  [1m[36mPlayer Load (3.0ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mChannel Exists (1.0ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Load (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 1]]
+  [1m[35mCACHE (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 2]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 5]]
+  [1m[36mChannel Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 6]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 7]]
+  [1m[36mChannel Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Load (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 8]]
+  [1m[35mChannel Exists (0.5ms)[0m  SELECT  1 AS one FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ? LIMIT 1  [["player_id", 10]]
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1[0m  [["player_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 10]]
+  Rendered players/index.html.erb within layouts/application (476.5ms)
+Completed 200 OK in 662ms (Views: 650.5ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/player.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/channel.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/channel.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/player.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 13:06:56 +0600
+
+
+Started GET "/api/_next?number=2354&format=json&callback=MyCallback" for ::1 at 2016-02-22 13:50:27 +0600
+Processing by ApiController#_next as JSON
+  Parameters: {"number"=>"2354", "callback"=>"MyCallback"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["number", 2354]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 4)[0m  [["published", "t"]]
+  [1m[35mCACHE (0.5ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+Completed 200 OK in 131ms (Views: 3.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/api/_next?number=2354&callback=MyCallback" for ::1 at 2016-02-22 13:51:37 +0600
+Processing by ApiController#_next as JSON
+  Parameters: {"number"=>"2354", "callback"=>"MyCallback"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."number" = ?  ORDER BY "players"."id" ASC LIMIT 1[0m  [["number", 2354]]
+  [1m[35mChannel Load (1.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "channels" WHERE "channels"."published" = ? AND (id > 4)[0m  [["published", "t"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels" INNER JOIN "channels_players" ON "channels"."id" = "channels_players"."channel_id" WHERE "channels_players"."player_id" = ?  ORDER BY "channels"."id" ASC LIMIT 1  [["player_id", 1]]
+Completed 200 OK in 40ms (Views: 2.0ms | ActiveRecord: 3.0ms)

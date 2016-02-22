@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   get 'api/_play' => 'api@_play'
   get 'api/_next' => 'api@_next'
   get 'api/_prev' => 'api@_prev'
-  get 'api/_answer' => 'api@_answer'
+  # get 'api/_answer' => 'api@_answer'
+  get 'api/_reg' => 'api@_reg'
   resources :channels do
     get :uppublish,    on: :member
     get :published, on: :collection

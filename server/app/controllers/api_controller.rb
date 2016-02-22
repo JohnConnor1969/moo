@@ -2,13 +2,17 @@ class ApiController < ApplicationController
   before_filter :find_player,      only: [:_play, :_next, :_prev, :_answer]
 
   def _reg
-    Player.create(number: params[:number]).permit(:number)
+    @player = Player.create(number: params[:number])
+    unless Channel.where(:published =>  true).empty?
+      @player.channels << [Channel.where(:published =>  true).first]
+    end
+    render json: @player
     # redirect_to action: 'create' [:number => '8888']
     # render text: "wooooowooowowo парень, палехче"
   end
 
   def _play
-    @chan = @player.channels.first.link
+    @chan = @player.channels.first
     render json: @chan
   end
 
@@ -18,17 +22,17 @@ class ApiController < ApplicationController
       @player.channels.clear
       @player.channels << Channel.where(:published =>  true).where("id > ?", cur_chan).first
     end
-    @chan = @player.channels.first.link
+    @chan = @player.channels.first
     render json: @chan
   end
 
   def _prev
-    i = @player.channels.first.id
-    unless Channel.where(:published =>  true).where("id < ?", i).empty?
+    cur_chan = @player.channels.first.id
+    unless Channel.where(:published =>  true).where("id < ?", cur_chan).empty?
       @player.channels.clear
-      @player.channels << Channel.where(:published =>  true).where("id < ?", i).last
+      @player.channels << Channel.where(:published =>  true).where("id < ?", cur_chan).last
     end
-    @chan = @player.channels.first.link
+    @chan = @player.channels.first
     render json: @chan
   end
 
@@ -37,14 +41,7 @@ class ApiController < ApplicationController
     # render json: @chan
   end
 
-  def fix
-    @player.channels.clear
-    unless Channel.where(:published =>  true).empty?
-      @player.channels << [Channel.where(:published =>  true).first]
-    end
 
-    redirect_to player_path(@player)
-  end
 
   private
     def find_player

@@ -14,13 +14,14 @@ window.onkeyup = function(event) {
 var site = "78.139.215.205"
 var canname = "server not respond";
 var showbar = 0;
+var number = "26374"
 
 function channNext() {
-
+  call_zoom_api("_next");
 }
 
 function channPrev() {
-
+  call_zoom_api("_prev");
 }
 
 function switchbar() {
@@ -57,3 +58,21 @@ myTime.innerHTML = h + ":" + m
 setTimeout('renderTime()', 15000);
 }
 renderTime();
+
+function my_callback(hash)
+{
+// hash - будет содержать ответ
+}
+
+function call_zoom_api(func_name)
+{
+var src = 'http://' + site + '/api/' + func_name + '?' + 'number='+ number + '&' + Math.random();
+var xhr = new XMLHttpRequest();
+xhr.open('GET', src, true);
+xhr.send();
+
+}
+// call_zoom_api("_reg");
+// call_zoom_api("_play");
+// call_zoom_api("_next");
+// call_zoom_api("_prev");
