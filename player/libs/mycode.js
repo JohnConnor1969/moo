@@ -33,7 +33,6 @@ function getRandomInt(min, max) {
 function regPlayer() {
   if (!resumePlayer()){
     number = getRandomInt(100000,990000);
-    
     call_zoom_api("_reg");
     if (respondServers.number == number) {
       savePlayer();
@@ -131,8 +130,8 @@ function call_zoom_api(func_name){
 // call_zoom_api("_prev");
 function resumePlayer() {
     if (!supportsLocalStorage()) { return false; }
-    gnumber = (localStorage["player.number"] == "true");
-    if (!gnumber) { return false; }
+    // number = (localStorage["player.number"] == "true");
+    if (!(localStorage["player.number"])) { return false; }
     number = (localStorage["player.number"]);
     return true;
 }
