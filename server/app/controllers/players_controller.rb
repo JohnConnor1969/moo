@@ -1,9 +1,8 @@
-class PlayersController < ApplicationController
-  # before_filter :check_play, only [:play, :next, :prev]
+class PlayersController < AdminsController
   before_filter :find_player,      only: [:show, :edit, :update, :destroy, :fix]
+
   def index
     @players = Player.all
-    # render text: "lalsldkkk sldkflla"
   end
 
   def new
@@ -38,14 +37,12 @@ class PlayersController < ApplicationController
     else
       render "new"
     end
-    # render text: params.inspect
   end
   def destroy
     @player.destroy
     redirect_to action: "index"
   end
   def show
-    # render :json => @player
     unless @player
       render text: "Page not found", status: 404
     end

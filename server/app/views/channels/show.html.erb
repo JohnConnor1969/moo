@@ -1,9 +1,26 @@
 <h1><%= @channel.name %></h1>
-
+<%= link_to "редактировать", edit_channel_path(@channel) %>
 <ul>
   <li>название: <%= @channel.name %></li>
   <li>ссылка: <%= @channel.link %></li>
   <li>в вещании: <%= @channel.published %></li>
 
 </ul>
+<% if @channel.players.empty? %>
+  <b>No players presents</b>
+<% else %>
+  <table>
+    <tr>
+      <th>player id</th>
+      <th>Number</th>
+    </tr>
+  
+  <% @channel.players.each do |i| %>
+    <tr>
+      <td><%= i.id %></td>
+      <td><%= link_to i.number, player_path(i) %></td>
+    </tr>
+  <% end %>
+  </table></br>
+<% end %>
 <%= link_to "к списку каналов", channels_path %>

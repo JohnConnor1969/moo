@@ -7,12 +7,13 @@
 <% else %>
   <table>
     <tr>
-      <th>channel id</th>
+      <th>ch id</th>
       <th>Name</th>
       <th>Link</th>
       <th>Manage</th>
       <th>Manage</th>
       <th>Published</th>
+      <th>Watchers</th>
     </tr>
   
   <% @channels.each do |i| %>
@@ -23,6 +24,7 @@
       <td><%= link_to "редактировать", edit_channel_path(i) %></td>
       <td><%= link_to "удалить", i, method: :delete, data: {confirm: "Точно удалить?"} %></td>
       <td><%= i.published %>, <%= link_to "изменить", uppublish_channel_path(i) %></td>
+      <td><%= link_to i.players.count, channel_path(i) %></td>
     </tr>
   <% end %>
   </table>
