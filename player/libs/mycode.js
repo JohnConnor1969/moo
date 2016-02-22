@@ -5,17 +5,24 @@ call_zoom_api("_reg")
 }
 
 window.onkeyup = function(event) {
-  if (event.keyCode == 32) { switchbar();};
-  if (event.keyCode == 38) { channNext();};
-  if (event.keyCode == 40) { channPrev();};
-  
+  switch (event.keyCode){
+    case 32:
+      switchbar()
+      break
+    case 38:
+      channNext()
+      break
+    case 40:
+      channPrev()
+      break
+  }
 }
 
 var site = "78.139.215.205"
 var canname = "server not respond";
 var showbar = 0;
-var number = "26374"
-
+var number = "263743"
+var respondServers
 function channNext() {
   call_zoom_api("_next");
 }
@@ -59,10 +66,7 @@ setTimeout('renderTime()', 15000);
 }
 renderTime();
 
-function my_callback(hash)
-{
-// hash - будет содержать ответ
-}
+
 
 function call_zoom_api(func_name)
 {
@@ -79,6 +83,7 @@ xhr.onreadystatechange = function() { // (3)
     if (xhr.status != 200) {
       alert(xhr.status + ': ' + xhr.statusText);
     } else {
+      respondServers = xhr.responseText;
       alert(xhr.responseText);
     }
 
