@@ -13,10 +13,10 @@ class ApiController < ApplicationController
   end
 
   def _next
-    i = @player.channels.first.id
-    unless Channel.where(:published =>  true).where("id > 'i'").empty?
+    cur_chan = @player.channels.first.id
+    unless Channel.where(:published =>  true).where("id > ?", cur_chan).empty?
       @player.channels.clear
-      @player.channels << Channel.where(:published =>  true).where("id > 'i'").first
+      @player.channels << Channel.where(:published =>  true).where("id > ?", cur_chan).first
     end
     @chan = @player.channels.first.link
     render json: @chan
@@ -24,9 +24,9 @@ class ApiController < ApplicationController
 
   def _prev
     i = @player.channels.first.id
-    unless Channel.where(:published =>  true).where("id < 'i'").empty?
+    unless Channel.where(:published =>  true).where("id < ?", i).empty?
       @player.channels.clear
-      @player.channels << Channel.where(:published =>  true).where("id < 'i'").first
+      @player.channels << Channel.where(:published =>  true).where("id < ?", i).last
     end
     @chan = @player.channels.first.link
     render json: @chan
